@@ -25,7 +25,8 @@
         display: block;
 
         &:active + .card__overlay {
-            display: flex;
+            visibility: visible;
+            opacity: 1;
         }
     }
 
@@ -36,9 +37,12 @@
         border-radius: .5rem;
         position: absolute;
         top: 0;
-        display: none;
+        display: flex;
         justify-content: center;
         align-items: center;
+        transition: visibility 0s, opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
     }
 
     &__texts {
@@ -49,6 +53,7 @@
     &__title {
         color: $text-primary-color;
         font-size: 1.341rem;
+        transition: all 500ms;
 
         &:active {
             color: $active-state-color;
@@ -97,6 +102,7 @@
 
         &-name {
             color: $text-primary-color;
+            transition: all 500ms;
 
             &:active {
                 color: $active-state-color;
