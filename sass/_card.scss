@@ -17,17 +17,18 @@
 
     &__image-container {
         position: relative;
+        cursor: pointer;
+
+        &:hover .card__overlay {
+            visibility: visible;
+            opacity: 1;
+        }
     }
 
     &__image {
         width: 100%;
         border-radius: .5rem;
         display: block;
-
-        &:active + .card__overlay {
-            visibility: visible;
-            opacity: 1;
-        }
     }
 
     &__overlay {
@@ -53,9 +54,10 @@
     &__title {
         color: $text-primary-color;
         font-size: 1.341rem;
+        cursor: pointer;
         transition: all 500ms;
 
-        &:active {
+        &:hover {
             color: $active-state-color;
         }
     }
@@ -102,9 +104,10 @@
 
         &-name {
             color: $text-primary-color;
+            cursor: pointer;
             transition: all 500ms;
 
-            &:active {
+            &:hover {
                 color: $active-state-color;
             }
         }

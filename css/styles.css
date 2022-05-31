@@ -33,17 +33,18 @@
 
 .card__image-container {
   position: relative;
+  cursor: pointer;
+}
+
+.card__image-container:hover .card__overlay {
+  visibility: visible;
+  opacity: 1;
 }
 
 .card__image {
   width: 100%;
   border-radius: .5rem;
   display: block;
-}
-
-.card__image:active + .card__overlay {
-  visibility: visible;
-  opacity: 1;
 }
 
 .card__overlay {
@@ -79,11 +80,12 @@
 .card__title {
   color: white;
   font-size: 1.341rem;
+  cursor: pointer;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
-.card__title:active {
+.card__title:hover {
   color: #00fff7;
 }
 
@@ -138,11 +140,12 @@
 
 .card__profile-name {
   color: white;
+  cursor: pointer;
   -webkit-transition: all 500ms;
   transition: all 500ms;
 }
 
-.card__profile-name:active {
+.card__profile-name:hover {
   color: #00fff7;
 }
 
