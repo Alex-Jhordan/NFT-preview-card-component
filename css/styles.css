@@ -156,8 +156,14 @@
 }
 
 .attribution {
+  font-size: 11px;
+  color: white;
   position: fixed;
   bottom: 10px;
+}
+
+.attribution__link {
+  color: #8bacda;
 }
 
 * {

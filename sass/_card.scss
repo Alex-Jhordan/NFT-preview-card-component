@@ -121,6 +121,12 @@
 }
 
 .attribution {
+    font-size: 11px;
+    color: $text-primary-color;
     position: fixed;
     bottom: 10px;
+
+    &__link {
+        color: $text-secondary-color;
+    }
 }
